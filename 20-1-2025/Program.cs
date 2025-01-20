@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -53,20 +54,33 @@ namespace ConsoleApp1
 
 
         //task4
-        //static int[] primeNums(int num1, int num2)
-        //{
-        //    int[] prime;
-        //    for (int i = num1; num2 >= num1; i++)
-        //    {
-        //        if (num1 % i == 0) {
-        //            continue; }
-        //        else {
-                    
-        //        }
+        static void primeNums(int num1, int num2)
+        {
+            int count = 0;
+            for (int i = num1; num2 >= num1; i++)
+            {
+                Console.WriteLine("HEllo Worldloop1");
+                for (int j = 2; j <= i ; i++)
+                {
+                    Console.WriteLine("HEllo Worldloop2");
+                    if (i % j == 0)
+                    {
+                        Console.WriteLine("HEllo Worldif");
+                        count++;  // Incrementing the counter if the number has factors other than 1 and itself
+                        break;  // Exiting the loop if a factor is found
+                    }
+                }
+                if (count == 0 && i != 1)
+                {
+                    Console.Write("{0} ",count);  // Displaying the prime number
+                    Console.WriteLine("HEllo World");
 
-        //    }
+                }
 
-        //}
+
+            }
+           
+        }
 
 
         //task5
@@ -90,20 +104,20 @@ namespace ConsoleApp1
         }
 
         //task6
-        //static void patternShap(int row)
-        //{
-        //    int num = 1;
-        //    for (int i = 1; i <= row; i++)
-        //    {
-        //        for (int j = 1; j <= i; j++)
-        //        {
-        //            Console.Write(num++ + " ");
+        static void patternShap(int row)
+        {
+            int num = 1;
+            for (int i = 1; i <= row; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write(num++ + " ");
 
-        //        }
-        //    Console.WriteLine();
-        //    }
-        //}
-        
+                }
+                Console.WriteLine();
+            }
+        }
+
 
 
 
@@ -141,7 +155,7 @@ namespace ConsoleApp1
 
 
             //task4
-
+            primeNums(10, 30);
 
             //task5
             //Console.WriteLine("Enter The length of the array");
@@ -154,29 +168,29 @@ namespace ConsoleApp1
             //patternShap(5);
 
 
-       
+
 
 
 
             //classTask
-            hotelystem room1 = new hotelystem();
-            room1.roomNum = 15;
-            room1.roomtype = "Single";
-            room1.price = 150.70;
-            room1.isBooked = false;
+            //hotelystem room1 = new hotelystem();
+            //room1.roomNum = 15;
+            //room1.roomtype = "Single";
+            //room1.price = 150.70;
+            //room1.isBooked = false;
 
 
-            hotelystem room2 = new hotelystem();    
-            room2.roomNum = 230;
-            room2.roomtype = "suit";
-            room2.price = 350;
-            room2.isBooked = true;
+            //hotelystem room2 = new hotelystem();    
+            //room2.roomNum = 230;
+            //room2.roomtype = "suit";
+            //room2.price = 350;
+            //room2.isBooked = true;
 
 
 
-            Console.WriteLine("Room Number " + room1.roomNum + " is a " + room1.roomtype + " and the price of this room is " + room1.price + " is " + room1.isBooked);
+            //Console.WriteLine("Room Number " + room1.roomNum + " is a " + room1.roomtype + " and the price of this room is " + room1.price + " and this room is " + room1.isBooked);
 
-            Console.WriteLine("Room Number " + room2.roomNum + " is a " + room2.roomtype + " and the price of this room is " + room2.price + " is " + room2.isBooked);
+            //Console.WriteLine("Room Number " + room2.roomNum + " is a " + room2.roomtype + " and the price of this room is " + room2.price + " is " + room2.isBooked);
         }
     }
 }

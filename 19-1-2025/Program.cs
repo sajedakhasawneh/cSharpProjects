@@ -59,17 +59,23 @@ namespace _19_1_2025
         }
 
 
-        static int digitSum(int num)
+        static int digitSum(string num)
         {
-            int sum = 0;
-            int rem;
-            while (num > 0)
-            {
-                rem = num % 10;
-                sum = sum + rem;
-                num = num / 10;
-            }
+            //int sum = 0;
+            //int rem;
+            //while (num > 0)
+            //{
+            //    rem = num % 10;
+            //    sum = sum + rem;
+            //    num = num / 10;
+            //}
+            //return sum;
 
+            int sum = 0;
+            for (int i = 0; i< num.Length ; i++)
+            {
+                sum += Convert.ToInt32(num[i].ToString());
+            }
             return sum;
         }
 
@@ -96,14 +102,23 @@ namespace _19_1_2025
 
             return mid;
         }
-        static int reversNum(int num)
+        static int reversNum(string num)
         {
-            int reverse = 0, rem;
-            while (num != 0)
+            //int reverse = 0, rem;
+            //while (num != 0)
+            //{
+            //    rem = num % 10;
+            //    reverse = reverse * 10 + rem;
+            //    num /= 10;
+            //}
+            //return reverse;
+
+            int reverse = 0;
+            for (int i = num.Length -1; i >= 0; i--)
             {
-                rem = num % 10;
-                reverse = reverse * 10 + rem;
-                num /= 10;
+                int toIntger= Convert.ToInt32(num[i].ToString());
+                reverse = reverse * 10 + toIntger;
+
             }
             return reverse;
         }
@@ -181,15 +196,19 @@ namespace _19_1_2025
 
             //task9.2
             //Console.Write("Enter a number: ");
-            //int num = Convert.ToInt32(Console.ReadLine());
+            ////int num = Convert.ToInt32(Console.ReadLine());
+            //string num = Console.ReadLine();
             //Console.WriteLine(digitSum(num));
 
 
 
             //task10
-            //Console.Write("Enter a number: ");
+            Console.Write("Enter a number: ");
             //int num = int.Parse(Console.ReadLine());
             //Console.WriteLine(reversNum(num));
+
+            string num = Console.ReadLine();
+            Console.WriteLine(reversNum(num));
 
 
 
