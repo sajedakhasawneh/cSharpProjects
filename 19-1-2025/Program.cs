@@ -165,9 +165,9 @@ namespace _19_1_2025
 
 
             //task8
-            Console.WriteLine("Enter minutes: ");
-            int minutes = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(totalHoursMints(minutes));
+            //Console.WriteLine("Enter minutes: ");
+            //int minutes = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(totalHoursMints(minutes));
 
 
 
