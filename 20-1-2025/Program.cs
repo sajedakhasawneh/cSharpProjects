@@ -17,9 +17,10 @@ namespace ConsoleApp1
                 result = "The number " + num + " is even.";
                 return result;
             }
-            else {
+            else
+            {
                 result = "The number " + num + " is odd.";
-                return result;  
+                return result;
             }
         }
 
@@ -29,11 +30,11 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Enter the numbers of the array");
             int[] nums = new int[len];
-            for (int i = 0; i<nums.Length; i++)
+            for (int i = 0; i < nums.Length; i++)
             {
                 nums[i] = Convert.ToInt32(Console.ReadLine());
 
-                }
+            }
             Array.Sort(nums);
             int smallest = nums[1];
             return smallest;
@@ -44,8 +45,9 @@ namespace ConsoleApp1
         static int factorialNum(int num)
         {
             int result = 1;
-            for (int i = num; i> 0; i--){
-                result *= i;   
+            for (int i = num; i > 0; i--)
+            {
+                result *= i;
             }
 
             return result;
@@ -54,33 +56,33 @@ namespace ConsoleApp1
 
 
         //task4
-        static void primeNums(int num1, int num2)
-        {
-            int count = 0;
-            for (int i = num1; num2 >= num1; i++)
-            {
-                Console.WriteLine("HEllo Worldloop1");
-                for (int j = 2; j <= i ; i++)
-                {
-                    Console.WriteLine("HEllo Worldloop2");
-                    if (i % j == 0)
-                    {
-                        Console.WriteLine("HEllo Worldif");
-                        count++;  // Incrementing the counter if the number has factors other than 1 and itself
-                        break;  // Exiting the loop if a factor is found
-                    }
-                }
-                if (count == 0 && i != 1)
-                {
-                    Console.Write("{0} ",count);  // Displaying the prime number
-                    Console.WriteLine("HEllo World");
+        //static void primeNums(int num1, int num2)
+        //{
+        //    int count = 0;
+        //    for (int i = num1; num2 >= num1; i++)
+        //    {
+        //        Console.WriteLine("HEllo Worldloop1");
+        //        for (int j = 2; j <= i; i++)
+        //        {
+        //            Console.WriteLine("HEllo Worldloop2");
+        //            if (i % j == 0)
+        //            {
+        //                Console.WriteLine("HEllo Worldif");
+        //                count++;  // Incrementing the counter if the number has factors other than 1 and itself
+        //                break;  // Exiting the loop if a factor is found
+        //            }
+        //        }
+        //        if (count == 0 && i != 1)
+        //        {
+        //            Console.Write("{0} ", count);  // Displaying the prime number
+        //            Console.WriteLine("HEllo World");
 
-                }
+        //        }
 
 
-            }
-           
-        }
+        //    }
+
+        //}
 
 
         //task5
@@ -94,12 +96,14 @@ namespace ConsoleApp1
                 nums[i] = Convert.ToInt32(Console.ReadLine());
 
             }
-            for (int i = 0; i < nums.Length - 1; i++) {
-                if (nums[i] > max) { 
+            for (int i = 0; i < nums.Length - 1; i++)
+            {
+                if (nums[i] > max)
+                {
                     max = nums[i];
                 }
 
-                }
+            }
             return max;
         }
 
@@ -121,51 +125,56 @@ namespace ConsoleApp1
 
 
 
-
-
-
         //class task
-        class hotelystem {
-           public int roomNum;
-           public string roomtype;
-           public double price;
-           public bool isBooked;
-           public const string hotelName = "Grand Stay Hotel";
-        }
-
-        static void Main(string[] args)
+        class hotelystem
         {
+            public int roomNum;
+            public string roomtype;
+            public double price;
+            public bool isBooked;
+            public const string hotelName = "Grand Stay Hotel";
+
+        }
+            static void Main(string[] args)
+            {
             //task1
-            //Console.WriteLine("Enter a number");
-            //int num = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine(OddEvenNums(num));
+            Console.WriteLine("Task 1");
+            Console.WriteLine("Enter a number");
+            int num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(OddEvenNums(num));
 
 
             //task2
-            //Console.WriteLine("Enter The length of the array");
-            //int num = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine(secondSmallest(num));
+            Console.WriteLine("Task 2");
+            Console.WriteLine("Enter The length of the array");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(secondSmallest(num2));
 
 
 
             //task3
-            //Console.WriteLine("Enter a number");
-            //int num = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine(factorialNum(num));
+            Console.WriteLine("Task 3");
+            Console.WriteLine("Enter a number");
+            int num3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(factorialNum(num3));
 
 
             //task4
-            primeNums(10, 30);
+            // primeNums(10, 30);
+
+
 
             //task5
-            //Console.WriteLine("Enter The length of the array");
-            //int arrlength = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine(largestNum(arrlength));
+            Console.WriteLine("Task 5");
+            Console.WriteLine("Enter The length of the array");
+            int arrlength = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(largestNum(arrlength));
 
 
 
             //task7
-            //patternShap(5);
+            Console.WriteLine("Task 7");
+            patternShap(5);
 
 
 
@@ -173,11 +182,17 @@ namespace ConsoleApp1
 
 
             //classTask
-            //hotelystem room1 = new hotelystem();
+            hotelystem room1 = new hotelystem();
             //room1.roomNum = 15;
             //room1.roomtype = "Single";
             //room1.price = 150.70;
             //room1.isBooked = false;
+
+            Console.WriteLine("Class Task");
+            room1.roomNum = Convert.ToInt32(Console.ReadLine());
+            room1.roomtype =Console.ReadLine();
+            room1.price = Convert.ToDouble(Console.ReadLine());
+            room1.isBooked = Convert.ToBoolean(Console.ReadLine());
 
 
             //hotelystem room2 = new hotelystem();    
@@ -188,9 +203,13 @@ namespace ConsoleApp1
 
 
 
-            //Console.WriteLine("Room Number " + room1.roomNum + " is a " + room1.roomtype + " and the price of this room is " + room1.price + " and this room is " + room1.isBooked);
+            Console.WriteLine("Room Number " + room1.roomNum + " is a " + room1.roomtype + " and the price of this room is " + room1.price + " and this room is " + room1.isBooked);
 
             //Console.WriteLine("Room Number " + room2.roomNum + " is a " + room2.roomtype + " and the price of this room is " + room2.price + " is " + room2.isBooked);
+
+
+
+
+        }
         }
     }
-}
