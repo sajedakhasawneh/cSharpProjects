@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
@@ -56,34 +57,29 @@ namespace ConsoleApp1
 
 
         //task4
-        //static void primeNums(int num1, int num2)
-        //{
-        //    int count = 0;
-        //    for (int i = num1; num2 >= num1; i++)
-        //    {
-        //        Console.WriteLine("HEllo Worldloop1");
-        //        for (int j = 2; j <= i; i++)
-        //        {
-        //            Console.WriteLine("HEllo Worldloop2");
-        //            if (i % j == 0)
-        //            {
-        //                Console.WriteLine("HEllo Worldif");
-        //                count++;  // Incrementing the counter if the number has factors other than 1 and itself
-        //                break;  // Exiting the loop if a factor is found
-        //            }
-        //        }
-        //        if (count == 0 && i != 1)
-        //        {
-        //            Console.Write("{0} ", count);  // Displaying the prime number
-        //            Console.WriteLine("HEllo World");
+        static void primeNums(int num1, int num2)
+        {
+            for (int i = num1; i <= num2; i++)
+            {
+                bool isPrime = true;
+                
+                    
+                    for (int j = 2; j < i; j++)
+                    {
+                        if (i % j == 0)
+                        {
+                            isPrime = false;
+                            break;
+                        }
+                    }
+                    if (isPrime)
+                    {
+                        Console.WriteLine(i);
+                    }
 
-        //        }
-
-
-        //    }
-
-        //}
-
+                
+            }
+        }
 
         //task5
         static int largestNum(int len)
@@ -96,7 +92,7 @@ namespace ConsoleApp1
                 nums[i] = Convert.ToInt32(Console.ReadLine());
 
             }
-            for (int i = 0; i < nums.Length - 1; i++)
+            for (int i = 0; i < nums.Length; i++)
             {
                 if (nums[i] > max)
                 {
@@ -160,7 +156,8 @@ namespace ConsoleApp1
 
 
             //task4
-            // primeNums(10, 30);
+            Console.WriteLine("Task 4");
+            primeNums(10, 30);
 
 
 
@@ -190,12 +187,16 @@ namespace ConsoleApp1
 
             Console.WriteLine("Class Task");
             room1.roomNum = Convert.ToInt32(Console.ReadLine());
-            room1.roomtype =Console.ReadLine();
+            room1.roomtype = Console.ReadLine();
             room1.price = Convert.ToDouble(Console.ReadLine());
             room1.isBooked = Convert.ToBoolean(Console.ReadLine());
 
 
-            //hotelystem room2 = new hotelystem();    
+            //hotelystem room2 = new hotelystem();
+            //room2.roomNum = Convert.ToInt32(Console.ReadLine());
+            //room2.roomtype = Console.ReadLine();
+            //room2.price = Convert.ToDouble(Console.ReadLine());
+            //room2.isBooked = Convert.ToBoolean(Console.ReadLine());
             //room2.roomNum = 230;
             //room2.roomtype = "suit";
             //room2.price = 350;
@@ -210,6 +211,7 @@ namespace ConsoleApp1
 
 
 
+
         }
-        }
+    }
     }
