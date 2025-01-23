@@ -18,7 +18,7 @@ namespace _22_1_2025
 
             public void start()
             {
-                Console.WriteLine("Vehicle");
+                Console.WriteLine("Vehicle is Starting");
 
             }
         }

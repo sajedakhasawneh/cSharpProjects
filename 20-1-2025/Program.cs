@@ -100,6 +100,7 @@ namespace ConsoleApp1
                 }
 
             }
+            Console.Write("The Largest number in the array is: ");
             return max;
         }
 
