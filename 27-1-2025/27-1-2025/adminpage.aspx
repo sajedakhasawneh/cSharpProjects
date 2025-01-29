@@ -26,7 +26,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Show book</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="meetingrooms.aspx"  class="btn btn-secondary">Show book</a>
+                        <a href="showBook.aspx"  class="btn btn-secondary">Show book</a>
                       </div>
                     </div>
                   </div>
@@ -36,7 +36,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Edit book</h5>
                       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="editBook.aspx"  class="btn btn-secondary">Edit book</a>
+                      <a href="toedit.aspx"  class="btn btn-secondary">Edit book</a>
                      </div>
                    </div>
                 </div>

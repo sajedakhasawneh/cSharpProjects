@@ -14,21 +14,21 @@
   <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-md-9 col-lg-6 col-xl-5">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" />
           class="img-fluid" alt="Sample image">
       </div>
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
        
 
           <!-- Email input -->
-          <div data-mdb-input-init class="form-outline mb-4">
+          <div class="data-mdb-input-init form-outline mb-4" >
   
             <label class="form-label" for="form3Example3">Email address</label>
              <asp:TextBox ID="email" runat="server" class="form-control form-control-lg"></asp:TextBox>
           </div>
 
           <!-- Password input -->
-          <div data-mdb-input-init class="form-outline mb-3">
+          <div  class="form-outline mb-3 data-mdb-input-init">
 
             <label class="form-label" for="form3Example4">Password</label>
               <asp:TextBox ID="password" runat="server" class="form-control form-control-lg"></asp:TextBox>
@@ -45,14 +45,14 @@
             <a href="#!" class="text-body">Forgot password?</a>
           </div>
 
+          <asp:Label ID="flag" runat="server" Visable="false" ></asp:Label>
           <div class="text-center text-lg-start mt-4 pt-2">
     
               <asp:Button ID="Login" runat="server" Text="Login" OnClick="login_Click" class="btn btn-primary btn-lg"  style="padding-left: 2.5rem; padding-right: 2.5rem;" />
                <asp:Label ID="result" runat="server" Visible="false" ></asp:Label>
             <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
                 class="link-danger">Register</a></p>
-          </div>
-      </div>
+     
     </div>
   </div>
 </section>

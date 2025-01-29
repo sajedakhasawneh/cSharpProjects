@@ -69,18 +69,23 @@
   <ItemGroup>
     <Content Include="addbook.aspx" />
     <Content Include="adminpage.aspx" />
+    <Content Include="bookediting.aspx" />
     <Content Include="books.txt" />
+    <Content Include="bookSearch.aspx" />
     <Content Include="booksstudent.aspx" />
     <Content Include="editBook.aspx" />
+    <Content Include="editProfile.aspx" />
     <Content Include="file.txt" />
     <Content Include="Home.aspx" />
     <Content Include="login.aspx" />
     <Content Include="meetingrooms.aspx" />
     <Content Include="meetrooms.txt" />
     <Content Include="registration.aspx" />
+    <Content Include="searchResult.aspx" />
     <Content Include="showBook.aspx" />
     <Content Include="studentpage.aspx" />
     <Content Include="toedit.aspx" />
+    <Content Include="userProfile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +103,20 @@
     <Compile Include="adminpage.aspx.designer.cs">
       <DependentUpon>adminpage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="bookediting.aspx.cs">
+      <DependentUpon>bookediting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookediting.aspx.designer.cs">
+      <DependentUpon>bookediting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookSearch.aspx.cs">
+      <DependentUpon>bookSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookSearch.aspx.designer.cs">
+      <DependentUpon>bookSearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="booksstudent.aspx.cs">
       <DependentUpon>booksstudent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -111,6 +130,13 @@
     </Compile>
     <Compile Include="editBook.aspx.designer.cs">
       <DependentUpon>editBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editProfile.aspx.cs">
+      <DependentUpon>editProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editProfile.aspx.designer.cs">
+      <DependentUpon>editProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -141,6 +167,13 @@
     <Compile Include="registration.aspx.designer.cs">
       <DependentUpon>registration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="searchResult.aspx.cs">
+      <DependentUpon>searchResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="searchResult.aspx.designer.cs">
+      <DependentUpon>searchResult.aspx</DependentUpon>
+    </Compile>
     <Compile Include="showBook.aspx.cs">
       <DependentUpon>showBook.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -161,6 +194,13 @@
     </Compile>
     <Compile Include="toedit.aspx.designer.cs">
       <DependentUpon>toedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userProfile.aspx.cs">
+      <DependentUpon>userProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userProfile.aspx.designer.cs">
+      <DependentUpon>userProfile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

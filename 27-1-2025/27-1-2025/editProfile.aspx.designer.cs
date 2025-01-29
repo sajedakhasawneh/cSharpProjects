@@ -11,7 +11,7 @@ namespace _27_1_2025
 {
 
 
-    public partial class editBook
+    public partial class editProfile
     {
 
         /// <summary>
@@ -24,48 +24,48 @@ namespace _27_1_2025
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// bookName control.
+        /// name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox bookName;
+        protected global::System.Web.UI.WebControls.TextBox name;
 
         /// <summary>
-        /// booktype control.
+        /// phone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox booktype;
+        protected global::System.Web.UI.WebControls.TextBox phone;
 
         /// <summary>
-        /// booklevel control.
+        /// address control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox booklevel;
+        protected global::System.Web.UI.WebControls.TextBox address;
 
         /// <summary>
-        /// editbook control.
+        /// email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button editbook;
+        protected global::System.Web.UI.WebControls.TextBox email;
 
         /// <summary>
-        /// Editmessage control.
+        /// editprofile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Editmessage;
+        protected global::System.Web.UI.WebControls.Button editprofile;
     }
 }
