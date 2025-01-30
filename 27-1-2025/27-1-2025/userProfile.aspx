@@ -10,6 +10,16 @@
     <form id="form1" runat="server">
         <div>
 
+                 <div class="container rounded bg-white mt-5 mb-5">
+                <div class="row">
+    
+                <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="text-right">Profile Settings</h4>
+            </div>
+
+             <div class="row mt-3">
                 <div class="col-md-12">
                  <label class="labels">Name</label>
                  <asp:TextBox ID="name" runat="server"  class="form-control"></asp:TextBox>
@@ -31,6 +41,12 @@
               <div class="mt-5 text-center">
                 <asp:Button ID="asktoedit" runat="server" Text="Edit Profile" class="btn btn-primary" OnClick="asktoedit_Click" />
               </div>
+
+              
+    </div>
+</div>
+</div>
+</div>
         </div>
     </form>
 </body>
