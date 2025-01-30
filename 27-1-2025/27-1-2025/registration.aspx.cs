@@ -22,7 +22,7 @@ namespace _27_1_2025
             if (!File.Exists(userdata)) {
                 using (StreamWriter streamWriter = File.CreateText(userdata))
                 {
-                    streamWriter.WriteLine($"{name.Text} {email.Text} {password.Text}");
+                    streamWriter.WriteLine($"{name.Text} {email.Text} {password.Text} false");
                 }
                 Response.Redirect("login.aspx");
             }
@@ -31,7 +31,7 @@ namespace _27_1_2025
             {
                 using (StreamWriter writer =  new StreamWriter (userdata,true))
                 {
-                    writer.WriteLine($"{name.Text} {email.Text} {password.Text}");
+                    writer.WriteLine($"{name.Text} {email.Text} {password.Text} false" );
                 }
                 Response.Redirect("login.aspx");
             }

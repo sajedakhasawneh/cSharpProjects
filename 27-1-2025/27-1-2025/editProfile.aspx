@@ -55,6 +55,7 @@
                  
                     <asp:Button ID="editprofile" runat="server" Text="Save" class="btn btn-primary" OnClick="editprofile_Click" />
                 </div>
+                <asp:Label Visible="false" ID="saved" Text="" runat="server"></asp:Label>
             </div>
         </div>
     </div>

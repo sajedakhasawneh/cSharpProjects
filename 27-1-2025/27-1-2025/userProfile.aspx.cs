@@ -23,7 +23,6 @@ namespace _27_1_2025
                     if (lines.Length < 3)
                         continue;
                     if (lines[3] == "true")
-                    //users.InnerHtml += $"<tr><td>  {lines[0]}   </td> <td>  {lines[1]}</tr>";
                     {
                         name.Text = lines[0];
                         email.Text = lines[1];

@@ -20,23 +20,19 @@ namespace _27_1_2025
             string profile = Server.MapPath("file.txt");
             if (File.Exists(profile))
             {
-                string [] readData = File.ReadAllLines(profile);
-                foreach (string read in readData) {
+                string[] readData = File.ReadAllLines(profile);
 
-                    string[] userData = read.Split(' ');
-                    if (userData[3] == "true") { 
-                        name.Text= userData[0];
-                        email.Text= userData[1];
-                        password.Text= userData[2]; 
-                        flag.Text= userData[3]; 
-
-                    return;
-}
-
-
-
+                for (int i = 0; i < readData.Length; i++)
+                {
+                    string[] userData = readData[i].Split(' ');
+                    if (userData[3] == "true")
+                    {
+                        readData[i] = $"{name.Text} {email.Text} {userData[2]} true";
+                        //File.writeAllLines(profile, userData);
+                        File.WriteAllLines(profile, readData);
+                        //saved.Text = "saved!";
+                    }
                 }
-               
             }
         }
     }

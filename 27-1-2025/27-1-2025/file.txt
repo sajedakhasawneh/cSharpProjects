@@ -1,2 +1,2 @@
-admin admin@gmail.com 123456789
-sajeda sajeda@gmail.com 123456 true
+admin admin@gmail.com 123456789 false
+sajeda sajedakh@gmail.com 1234 true

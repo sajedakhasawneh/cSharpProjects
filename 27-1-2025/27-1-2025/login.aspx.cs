@@ -21,20 +21,17 @@ namespace _27_1_2025
         {
             string userdata = Server.MapPath("file.txt");
             string[] uData = File.ReadAllLines(userdata);
-            //bool flag=false;
             for (int i = 0; i < uData.Length; i++)
             {
                 string[] Data = uData[i].Split(' ');
                 if (email.Text == Data[1] && password.Text == Data[2])
                 {
-                    //char[] toTrim = {'@'};
                     string user = Data[1];
-                    //string value = user.Trim(toTrim);
                     if (user == "admin@gmail.com")
                     {
                         result.Text = "login successfully";
                         result.Visible = true;
-                        Data[i] = $"{Data[0]} {Data[1]} {Data[2]} true";
+                        uData[i] = $"{Data[0]} {Data[1]} {Data[2]} true";
                         File.WriteAllLines(Server.MapPath("file.txt"), uData);
                         Response.Redirect("adminpage.aspx");
                     }
@@ -42,7 +39,7 @@ namespace _27_1_2025
 
                         result.Text = "login successfully";
                         result.Visible = true;
-                        Data[i] = $"{Data[0]} {Data[1]} {Data[2]} true";
+                        uData[i] = $"{Data[0]} {Data[1]} {Data[2]} true";
                         File.WriteAllLines(Server.MapPath("file.txt"), uData);
                         Response.Redirect("studentpage.aspx");
                     }
