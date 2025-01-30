@@ -33,6 +33,7 @@
             <label class="form-label" for="form3Example4">Password</label>
               <asp:TextBox ID="password" runat="server" class="form-control form-control-lg"></asp:TextBox>
           </div>
+           <asp:TextBox ID="flag" runat="server" class="form-control form-control-lg" Visible="false"></asp:TextBox>
 
           <div class="d-flex justify-content-between align-items-center">
             <!-- Checkbox -->
@@ -45,7 +46,7 @@
             <a href="#!" class="text-body">Forgot password?</a>
           </div>
 
-          <asp:Label ID="flag" runat="server" Visable="false" ></asp:Label>
+          <asp:Label ID="checkuser" runat="server" Visable="false" ></asp:Label>
           <div class="text-center text-lg-start mt-4 pt-2">
     
               <asp:Button ID="Login" runat="server" Text="Login" OnClick="login_Click" class="btn btn-primary btn-lg"  style="padding-left: 2.5rem; padding-right: 2.5rem;" />

@@ -48,7 +48,16 @@ namespace _27_1_2025
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label flag;
+        protected global::System.Web.UI.WebControls.TextBox flag;
+
+        /// <summary>
+        /// checkuser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label checkuser;
 
         /// <summary>
         /// Login control.

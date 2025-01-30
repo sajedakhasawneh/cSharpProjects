@@ -26,24 +26,28 @@
                         <asp:TextBox ID="name" runat="server"  class="form-control"></asp:TextBox>
                     </div>
 
-                    <div class="col-md-12">
+                  <%--  <div class="col-md-12">
                         <label class="labels">Mobile Number</label>
                         <asp:TextBox ID="phone" runat="server" class="form-control" ></asp:TextBox>
-                    </div>
+                    </div>--%>
 
-                    <div class="col-md-12">
+                 <%--   <div class="col-md-12">
                         <label class="labels">Address</label>
                         <asp:TextBox ID="address" runat="server" class="form-control"></asp:TextBox>
-                    </div>
+                    </div>--%>
 
                     <div class="col-md-12">
                         <label class="labels">Email</label>
                         <asp:TextBox ID="email" runat="server"  class="form-control"></asp:TextBox>
                     </div>
                     <div class="col-md-12">
-                        <label class="labels">Country</label>
-                        <input type="text" class="form-control" placeholder="country" value="">
+                        <%--<label class="labels">Country</label>--%>
+                     <asp:TextBox ID="password" runat="server" class="form-control" Visible="false" ></asp:TextBox>
                     </div>
+                              <div class="col-md-12">
+            <%-- <label class="labels">Address</label>--%>
+             <asp:TextBox ID="flag" runat="server" class="form-control" Visible="false"></asp:TextBox>
+         </div>
 
                 </div>
 

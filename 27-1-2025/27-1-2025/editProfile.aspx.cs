@@ -24,10 +24,14 @@ namespace _27_1_2025
                 foreach (string read in readData) {
 
                     string[] userData = read.Split(' ');
-                    name.Text= userData[0];
-                    email.Text= userData[1] ;
-                    break;
+                    if (userData[3] == "true") { 
+                        name.Text= userData[0];
+                        email.Text= userData[1];
+                        password.Text= userData[2]; 
+                        flag.Text= userData[3]; 
 
+                    return;
+}
 
 
 

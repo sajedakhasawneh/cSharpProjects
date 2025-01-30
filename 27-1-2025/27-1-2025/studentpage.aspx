@@ -15,6 +15,7 @@
 
 
             <h1 style="text-align:center;">Powers of Student</h1>
+                <span><asp:Button ID="showprofile" runat="server" Text="User profile" OnClick="showprofile_Click"/></span>
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="card">
@@ -35,7 +36,6 @@
                     </div>
                   </div>
                 </div>
-
         </div>
     </form>
 </body>

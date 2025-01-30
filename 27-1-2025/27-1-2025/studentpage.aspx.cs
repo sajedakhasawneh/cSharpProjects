@@ -13,5 +13,10 @@ namespace _27_1_2025
         {
 
         }
+
+        protected void showprofile_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("userProfile.aspx");
+        }
     }
 }

@@ -20,7 +20,21 @@ namespace _27_1_2025
                 {
                   
                     string [] lines = s.Split(' ');
-                    users.InnerHtml += $"<tr><td>  {lines[0]}   </td> <td>  {lines[1]}</tr>";
+                    if (lines.Length < 3)
+                        continue;
+                    if (lines[3] == "true")
+                    //users.InnerHtml += $"<tr><td>  {lines[0]}   </td> <td>  {lines[1]}</tr>";
+                    {
+                        name.Text = lines[0];
+                        email.Text = lines[1];
+                        password.Text = lines[2];
+                        flag.Text = lines[3];
+                        return;
+
+
+                    }
+
+
                 }
             }
         }

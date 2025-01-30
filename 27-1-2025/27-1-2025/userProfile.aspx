@@ -10,20 +10,28 @@
     <form id="form1" runat="server">
         <div>
 
-               <%-- <div class="col-md-12">
+                <div class="col-md-12">
                  <label class="labels">Name</label>
                  <asp:TextBox ID="name" runat="server"  class="form-control"></asp:TextBox>
                 </div>
                <div class="col-md-12">
                   <label class="labels">Email</label>
-                  <asp:TextBox ID="email" runat="server"  class="form-control"></asp:TextBox>
+                  <asp:TextBox ID="email" runat="server"  class="form-control" ></asp:TextBox>
                </div>
+             <div class="col-md-12">
+   
+                   <asp:TextBox ID="flag" runat="server" class="form-control" Visible="false"></asp:TextBox>
+                 <asp:TextBox ID="password" runat="server" class="form-control" Visible="false" ></asp:TextBox>
+ 
+
+ </div>
 
               <div class="mt-5 text-center">
                 <asp:Button ID="asktoedit" runat="server" Text="Edit Profile" class="btn btn-primary" OnClick="asktoedit_Click" />
-              </div>--%>
+              </div>
 
-            <table class="table table-bordered border-primary">
+
+      <%--      <table class="table table-bordered border-primary">
                  <thead>
                    <tr>
                      <th scope="col">Name</th>
@@ -32,7 +40,7 @@
                  </thead>
                  <tbody id="users" runat="server">
                  </tbody>
-            </table>
+            </table>--%>
         </div>
     </form>
 </body>
